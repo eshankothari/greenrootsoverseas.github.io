@@ -12,10 +12,14 @@ nav {
     height: 40px;
 }
 main {
-    height: 400px;
+    /*height: 400px;*/
     text-align: center;
 }
 
+img {
+    max-width:100%;
+    height:auto;
+}
 footer {
     height: 100px;
 }
