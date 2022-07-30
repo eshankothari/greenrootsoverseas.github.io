@@ -1,0 +1,93 @@
+/* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
+@media screen and (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+/* Big Screens above 1025 to max */
+@media only screen and (max-width: 1280px) {
+    .pulses-text-box { width: 85%; }
+
+    .row { padding: 0 2%; }
+
+    .products-container { padding: 0 2%; }
+
+    .products-gallery > li { flex-basis: 32%; }
+}
+
+/* Ipads and desktop screens from 769 to 1024 */
+@media only screen and (max-width: 1024px) {
+    
+     body { font-size: 18px; }
+    .pulses-text-box { width: 80%; }
+
+    .products-container { padding: 0 2%; }
+
+    .box .city-img {
+        height: 175px;
+    }
+
+    .city-info {
+        font-size: 90%;
+        margin-top: 10px;
+    }
+
+    .icons { height: 40px}
+}
+
+/* Screens from 481px to 768px*/
+@media only screen and (max-width: 768px) {
+
+    body { font-size: 16px; }
+
+    .main-nav { display: none;}
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+
+    .main-nav {
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+
+    .main-nav li{
+        display:block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    .sticky .main-nav { margin-top: 10px; }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10 px 0px; }
+    .sticky .mobile-nav-icon { margin-top: 10px; }
+    .sticky .mobile-nav-icon i { color: #555; }
+
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
+    .col { width: 100%; }
+    .box .city-img { height: 170px; }
+    .products-gallery > li { flex-basis: 60%; }
+
+}
+
+/* small phones */
+@media only screen and (max-width: 480px) {
+   
+    body { font-size: 15px; }
+    h1 { font-size: 130%; }
+    h2 { font-size: 100%; }
+    h4 { font-size: 90%;}
+
+    .about-us-para {
+        margin-bottom: 10px;
+    }
+}

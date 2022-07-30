@@ -1,0 +1,448 @@
+/* ======= BASIC PROPERTIES VALUES======== */
+/* Green Color : #009432
+
+/* ======================================= */
+
+/* ---------------------------------------------------------*/
+/* BASICS SETUP */
+/* ---------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Helvetica', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/* ---------------------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+.quality {
+    display: block;
+    height: 50px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+/* ============ HEADINGS =============*/
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h4 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    word-spacing: 4px;
+}
+
+h5 {
+    color: #009432;
+    font-weight: 600;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #006323;
+    content: " ";
+    width: 140px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*======== PARAGRAPHS ===================*/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.box .values {
+    font-size: 80%;
+    line-height: 145%;
+    font-weight: 300;
+}
+
+.about-us-para {
+    text-align: center;
+}
+
+/*======== BUTTONS ===================*/
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    -webkit-transition: background-color 0.5s, border 0.5s, color 0.5s;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #009432;
+    border: 1px solid #009432;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #006323;
+    border: 1px solid #006323;
+}
+
+/* ---------------------------------------------------------*/
+/* HEADER */
+/* ---------------------------------------------------------*/
+
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/pulses.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/pulses.jfif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.pulses-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 35%;
+    -webkit-transform: translate(-25%, -25%);
+            transform: translate(-25%, -25%);
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    float: left;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.logo-small {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    border-radius: 50px;
+    margin: 5px 0;
+}
+
+/* Main Navigation */
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.4s;
+    transition: border-bottom 0.4s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #009432;
+}
+
+/*--------------------------------*/
+/* MOBILE NAVIGATION              */
+/*--------------------------------*/
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+
+/* Sticky Navigation */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0px;
+    color: #555;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-small { display: block;}
+
+
+
+/*------------------------------------------------*/
+/* ABOUT US                                       */
+/*------------------------------------------------*/
+.section-about-us {
+    padding: 10% 0;
+}
+
+.section-about-us .long-copy {
+    margin-bottom: 30px;
+}
+
+
+/* -----------------------------------------------*/
+/* PRODUCTS                                       */
+/* -----------------------------------------------*/
+
+.container {
+    padding: 40px 5%;
+}
+
+.products-container ul {
+    list-style: none;
+}
+
+.products-gallery {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+    gap: 10px;
+}
+
+.products-gallery>li {
+    flex-basis: 350px;
+    /*width: 350px;*/
+    position: relative;
+    cursor: pointer;
+}
+
+.products-gallery::after {
+    content: "";
+    flex-basis: 350px;
+}
+
+.products-gallery li img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 19, 19, 0.7);
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: all 0.2s 0.1s ease-in-out;
+    transition: all 0.2s 0.1s ease-in-out;
+    color: #fff;
+    border-radius: 5px;
+    /* center overlay text */
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+}
+
+/* hover */
+.products-gallery li:hover .overlay {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+/*------------------------------------------------*/
+/* CONTACT US                                     */
+/*------------------------------------------------*/
+
+.section-cities {
+    padding-bottom: 5%;
+    padding-top: 7%;
+}
+
+.box .city-info h3 {
+    margin-bottom: 0;
+    color: #009432;
+    text-align: center;
+}
+
+.box .country {
+    font-weight: 900;
+    text-align: center;
+}
+
+.box .city-img {
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50px;
+}
+
+.icons {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: auto;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    font-weight: 500;
+    text-align: center;
+    font-size: 80%;
+    word-spacing: -2px;
+    margin-top: 10px;
+}
+
+/*------------------------------------------------*/
+/* Footer                                         */
+/*------------------------------------------------*/
+
+footer {
+    background-color: #333;
+    padding: 40px;
+}
+
+.copyright-box {
+    color: #e4f8eb;
+    text-align: center;
+    font-size: 80%;
+    padding-bottom: 10px;
+}
+
+/* ---------------------------------------------------------*/
+/* SCROLL TO TOP BUTTON                                     */
+/* ---------------------------------------------------------*/
+
+#btnScrollToTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #03b140;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#btnScrollToTop:active {
+    background: #02461a;
+}
+
+/* ---------------------------------------------------------*/
+/* ANIMATIONS                                               */
+/* ---------------------------------------------------------*/
+
+.js--wp-1,
+.js--wp-2 {
+    opacity: 0;
+}
+
+.js--wp-1.animate__animated,
+.js--wp-2.animate__animated {
+    opacity: 1;
+}
